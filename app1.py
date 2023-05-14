@@ -140,7 +140,7 @@ if nav == "Credit Risk":
 if nav =="Market Risk":
     st.title("Let's begin to calculate your Market Risk!")
     
-    st.image('/Users/pritika/Desktop/TrEx/Zscore.jpeg')
+    st.image('Zscore.jpeg')
     inputZscore_label = "Choose appropriate Z-Score by referring the above:"
     bold_inputZscore_label = f"**{inputZscore_label}**"
     Zscore = st.selectbox(bold_inputZscore_label, [1.645,1.96,2.33,2.575], index=1)
