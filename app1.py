@@ -21,11 +21,11 @@ if nav == "Home":
     
 #    st.image('/Users/pritika/Desktop/TrEx/home2.jpeg')
 
-    st.markdown("**More about this project:**")
+    st.markdown("<b>More about this project:</b>", unsafe_allow_html=True)
     st.markdown("The primary objective of this **Machine learning** project is to enable banks to \nmake data-driven decisions regarding **loan approvals** and **risk mitigation**. \nBy leveraging historical data, market indicators, and various risk factors, \nthe project aims to accurately assess creditworthiness and potential \nmarket risks associated with lending.")
     
-    st.markdown("**Creators**")
-    st.markdown("**Team Trex:**  Anjali Kedia, Srijena Guin, Pritika Kannapiran")
+    st.markdown("<b>Creators</b>", unsafe_allow_html=True)
+    st.markdown("<b>Team Trex:</b> Anjali Kedia, Srijena Guin, Pritika Kannapiran", unsafe_allow_html=True)
 
 if nav == "Credit Risk":
     st.title("Let's begin to calculate your Credit Risk!")
