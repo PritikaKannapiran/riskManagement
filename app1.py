@@ -147,7 +147,7 @@ if nav =="Market Risk":
     
     inputPval_label = "Enter the portfolio value:"
     bold_inputPval_label = f"**{inputPval_label}**"
-    Pval = st.number_input(bold_inputPval_label)
+    Pval = st.number_input(inputPval_label)
     
     if st.button("Predict the risk",key = 9)==1:
          ## Order of passing the data into the pipeline:
