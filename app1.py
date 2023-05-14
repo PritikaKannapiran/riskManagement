@@ -9,7 +9,7 @@ nav = st.sidebar.selectbox("Select the one you wish to predict!", ["Home", "Cred
 
 if nav == "Home":
     st.title("Risk Management")
-    st.markdown("**Open innovation for managing the risk profile**")
+    st.markdown("<b>Open innovation for managing the risk profile</b>", unsafe_allow_html=True)
     st.image('riskManage.jpeg')
     
     st.markdown("You’ve found yourself in the right place if you’re looking to find if it’s \nsafe for the bank to issue a loan or if it’s risky")
@@ -25,13 +25,13 @@ if nav == "Credit Risk":
     st.title("Let's begin to calculate your Credit Risk!")
     
     inputAge_label = "Enter person's age:"
-    bold_inputAge_label = f"**{inputAge_label}**"
-    age = st.number_input(bold_inputAge_label)
+#     bold_inputAge_label = f"**{inputAge_label}**"
+    age = st.number_input(inputAge_label)
 #    st.write(age)
     
     inputIncome_label = "Enter person's income:"
-    bold_inputIncome_label = f"**{inputIncome_label}**"
-    income = st.number_input(bold_inputIncome_label)
+#     bold_inputIncome_label = f"**{inputIncome_label}**"
+    income = st.number_input(inputIncome_label)
 #    st.write(income)
     
     st.text ("Select the appropriate house ownership type: ")
@@ -41,12 +41,12 @@ if nav == "Credit Risk":
     st.text("Rent     --> 3")
     
     inputHouse_label = "Choose ownership type"
-    bold_inputHouse_label = f"**{inputHouse_label}**"
-    house = st.selectbox(bold_inputHouse_label, [0, 1, 2, 3])
+#     bold_inputHouse_label = f"**{inputHouse_label}**"
+    house = st.selectbox(inputHouse_label, [0, 1, 2, 3])
     
     inputLength_label = "Enter person's employment length:"
-    bold_inputLength_label = f"**{inputLength_label}**"
-    emp = st.number_input(bold_inputLength_label)
+#     bold_inputLength_label = f"**{inputLength_label}**"
+    emp = st.number_input(inputLength_label)
     
     st.text ("Select the appropriate loan intent type: ")
     st.text("Debt consolidation --> 0")
@@ -57,8 +57,8 @@ if nav == "Credit Risk":
     st.text("Venture            --> 5")
     
     inputIntent_label = "Choose person's loan intent:"
-    bold_inputIntent_label = f"**{inputIntent_label}**"
-    intent = st.selectbox(bold_inputIntent_label, [0,1,2,3,4,5])
+#     bold_inputIntent_label = f"**{inputIntent_label}**"
+    intent = st.selectbox(inputIntent_label, [0,1,2,3,4,5])
     
     st.text ("Select the appropriate loan grade type: ")
     st.text("A --> 0")
@@ -70,40 +70,40 @@ if nav == "Credit Risk":
     st.text("G --> 6")
     
     inputGrade_label = "Choose person's loan grade:"
-    bold_inputGrade_label = f"**{inputGrade_label}**"
-    grade = st.selectbox(bold_inputGrade_label, [0,1,2,3,4,5,6])
+#     bold_inputGrade_label = f"**{inputGrade_label}**"
+    grade = st.selectbox(inputGrade_label, [0,1,2,3,4,5,6])
     
     inputAmt_label = "Enter person's loan amount:"
-    bold_inputAmt_label = f"**{inputAmt_label}**"
-    amt = st.number_input(bold_inputAmt_label)
+#     bold_inputAmt_label = f"**{inputAmt_label}**"
+    amt = st.number_input(inputAmt_label)
     
     inputInterest_label = "Enter person's interest rate amount:"
-    bold_inputInterest_label = f"**{inputInterest_label}**"
-    interest = st.number_input(bold_inputInterest_label)
+#     bold_inputInterest_label = f"**{inputInterest_label}**"
+    interest = st.number_input(inputInterest_label)
     
     st.text ("Select the appropriate loan status type: ")
     st.text("Repaid --> 0")
     st.text("Pending --> 1")
     
     inputStatus_label = "Choose person's loan status:"
-    bold_inputStatus_label = f"**{inputStatus_label}**"
-    status = st.selectbox(bold_inputStatus_label, [0,1], index=1)
+#     bold_inputStatus_label = f"**{inputStatus_label}**"
+    status = st.selectbox(inputStatus_label, [0,1], index=1)
     
     inputPerInc_label = "Enter person's loan percent income:"
-    bold_inputPerInc_label = f"**{inputPerInc_label}**"
-    per_inc = st.number_input(bold_inputPerInc_label)
+#     bold_inputPerInc_label = f"**{inputPerInc_label}**"
+    per_inc = st.number_input(inputPerInc_label)
     
     st.text ("Select the appropriate type: ")
     st.text("No --> 0")
     st.text("Yes --> 1")
     
     inputPerDef_label = "Choose person's default:"
-    bold_inputPerDef_label = f"**{inputPerDef_label}**"
-    per_def = st.selectbox(bold_inputPerDef_label, [0,1], index=1)
+#     bold_inputPerDef_label = f"**{inputPerDef_label}**"
+    per_def = st.selectbox(inputPerDef_label, [0,1], index=1)
     
     inputHist_label = "Enter person's credit history length:"
-    bold_inputHist_label = f"**{inputHist_label}**"
-    hist = st.number_input(bold_inputHist_label)
+#     bold_inputHist_label = f"**{inputHist_label}**"
+    hist = st.number_input(inputHist_label)
     
     if st.button("Predict Credit Score",key = 9)==1:
          ## Order of passing the data into the pipeline:
