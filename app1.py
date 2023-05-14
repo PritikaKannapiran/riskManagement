@@ -18,7 +18,7 @@ if nav == "Home":
     st.markdown("<b>More about this project:</b>", unsafe_allow_html=True)
     st.markdown("The primary objective of this **Machine learning** project is to enable banks to \nmake data-driven decisions regarding **loan approvals** and **risk mitigation**. \nBy leveraging historical data, market indicators, and various risk factors, \nthe project aims to accurately assess creditworthiness and potential \nmarket risks associated with lending.")
     
-    st.markdown("<b><u>Creators</u></b>", unsafe_allow_html=True)
+    st.markdown("<b><u>Creators:</u></b>", unsafe_allow_html=True)
     st.markdown("<b><u>Team Trex:</b> Anjali Kedia, Srijena Guin, Pritika Kannapiran", unsafe_allow_html=True)
 
 if nav == "Credit Risk":
