@@ -1,13 +1,9 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-# from matplotlib import pyplot as plt
 import pickle
 import joblib
 
-
-#with open('/Users/pritika/Desktop/TrEx/model.pkl', 'rb') as file:
-#    model = pickle.load(file)
 
 nav = st.sidebar.selectbox("Select the one you wish to predict!", ["Home", "Credit Risk", "Market Risk", "Stress Testing"])
 
@@ -18,8 +14,6 @@ if nav == "Home":
     
     st.markdown("You’ve found yourself in the right place if you’re looking to find if it’s \nsafe for the bank to issue a loan or if it’s risky")
     st.markdown("Head over to the navigation bar on the left of the screen to check for credit \nand market risks")
-    
-#    st.image('/Users/pritika/Desktop/TrEx/home2.jpeg')
 
     st.markdown("<b>More about this project:</b>", unsafe_allow_html=True)
     st.markdown("The primary objective of this **Machine learning** project is to enable banks to \nmake data-driven decisions regarding **loan approvals** and **risk mitigation**. \nBy leveraging historical data, market indicators, and various risk factors, \nthe project aims to accurately assess creditworthiness and potential \nmarket risks associated with lending.")
