@@ -34,11 +34,11 @@ if nav == "Credit Risk":
     income = st.number_input(inputIncome_label)
 #    st.write(income)
     
-    st.text ("Select the appropriate house ownership type: ")
-    st.text("Mortgage --> 0")
-    st.text("Other    --> 1")
-    st.text("Own      --> 2")
-    st.text("Rent     --> 3")
+    st.markdown("Select the appropriate house ownership type: ")
+    st.markdown("Mortgage --> 0")
+    st.markdown("Other    --> 1")
+    st.markdown("Own      --> 2")
+    st.markdown("Rent     --> 3")
     
     inputHouse_label = "Choose ownership type"
 #     bold_inputHouse_label = f"**{inputHouse_label}**"
@@ -48,26 +48,26 @@ if nav == "Credit Risk":
 #     bold_inputLength_label = f"**{inputLength_label}**"
     emp = st.number_input(inputLength_label)
     
-    st.text ("Select the appropriate loan intent type: ")
-    st.text("Debt consolidation --> 0")
-    st.text("Education          --> 1")
-    st.text("Home improvement   --> 2")
-    st.text("Medical            --> 3")
-    st.text("Personal           --> 4")
-    st.text("Venture            --> 5")
+    st.markdown("Select the appropriate loan intent type: ")
+    st.markdown("Debt consolidation --> 0")
+    st.markdown("Education          --> 1")
+    st.markdown("Home improvement   --> 2")
+    st.markdown("Medical            --> 3")
+    st.markdown("Personal           --> 4")
+    st.markdown("Venture            --> 5")
     
     inputIntent_label = "Choose person's loan intent:"
 #     bold_inputIntent_label = f"**{inputIntent_label}**"
     intent = st.selectbox(inputIntent_label, [0,1,2,3,4,5])
     
-    st.text ("Select the appropriate loan grade type: ")
-    st.text("A --> 0")
-    st.text("B --> 1")
-    st.text("C --> 2")
-    st.text("D --> 3")
-    st.text("E --> 4")
-    st.text("F --> 5")
-    st.text("G --> 6")
+    st.markdown("Select the appropriate loan grade type: ")
+    st.markdown("A --> 0")
+    st.markdown("B --> 1")
+    st.markdown("C --> 2")
+    st.markdown("D --> 3")
+    st.markdown("E --> 4")
+    st.markdown("F --> 5")
+    st.markdown("G --> 6")
     
     inputGrade_label = "Choose person's loan grade:"
 #     bold_inputGrade_label = f"**{inputGrade_label}**"
@@ -81,9 +81,9 @@ if nav == "Credit Risk":
 #     bold_inputInterest_label = f"**{inputInterest_label}**"
     interest = st.number_input(inputInterest_label)
     
-    st.text ("Select the appropriate loan status type: ")
-    st.text("Repaid --> 0")
-    st.text("Pending --> 1")
+    st.markdown("Select the appropriate loan status type: ")
+    st.markdown("Repaid --> 0")
+    st.markdown("Pending --> 1")
     
     inputStatus_label = "Choose person's loan status:"
 #     bold_inputStatus_label = f"**{inputStatus_label}**"
@@ -93,9 +93,9 @@ if nav == "Credit Risk":
 #     bold_inputPerInc_label = f"**{inputPerInc_label}**"
     per_inc = st.number_input(inputPerInc_label)
     
-    st.text ("Select the appropriate type: ")
-    st.text("No --> 0")
-    st.text("Yes --> 1")
+    st.markdown("Select the appropriate type: ")
+    st.markdown("No --> 0")
+    st.markdown("Yes --> 1")
     
     inputPerDef_label = "Choose person's default:"
 #     bold_inputPerDef_label = f"**{inputPerDef_label}**"
