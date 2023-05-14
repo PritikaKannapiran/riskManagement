@@ -142,11 +142,11 @@ if nav =="Market Risk":
     
     st.image('Zscore.jpeg')
     inputZscore_label = "Choose appropriate Z-Score by referring the above:"
-    bold_inputZscore_label = f"**{inputZscore_label}**"
-    Zscore = st.selectbox(bold_inputZscore_label, [1.645,1.96,2.33,2.575], index=1)
+#     bold_inputZscore_label = f"**{inputZscore_label}**"
+    Zscore = st.selectbox(inputZscore_label, [1.645,1.96,2.33,2.575], index=1)
     
     inputPval_label = "Enter the portfolio value:"
-    bold_inputPval_label = f"**{inputPval_label}**"
+#     bold_inputPval_label = f"**{inputPval_label}**"
     Pval = st.number_input(inputPval_label)
     
     if st.button("Predict the risk",key = 9)==1:
