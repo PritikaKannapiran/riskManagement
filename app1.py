@@ -174,6 +174,32 @@ if nav =="Market Risk":
             st.markdown("<h1 style='font-size: 32px;'>NOT UNDER RISK!</h1>", unsafe_allow_html=True)
          if Lim < varRound:
             st.markdown("<h1 style='font-size: 32px;'>IT IS UNDER RISK!!</h1>", unsafe_allow_html=True)
+            
+    if nav=="Stress Testing":
+        st.title("Stress Testing")
+        st.markdown("Stress testing is a risk management process that involves evaluating the performance of a financial system, organization, or portfolio under different adverse scenarios.")
+        st.markdown("Banks can conduct stress tests to determine how their portfolio would perform under different market scenarios. This can help to identify potential areas of weakness and allow banks to take proactive measures to mitigate risk.")
+
+        st.markdown("To perform stress testing, we need to follow these steps:")
+        st.markdown("Let's assume we have a bank portfolio with 2 assets: Asset A & Asset B, with their respective weights of 60% and 40%. We want to stress test this portfolio under the scenario of an economic recession, which we assume will cause a 20% drop in the value of both assets.")
+        st.markdown("Determine the stressed value of each asset: In our case, since we assume a 20% drop in the value of both assets, the stressed value of Asset A would be 80% of its original value, and the stressed value of Asset B would also be 80% of its original value.")
+    
+        st.markdown(" ")
+
+        st.markdown("<u><b>Calculate the stressed portfolio value:</b></u>", unsafe_allow_html=True)
+        st.markdown("The stressed portfolio value is simply the sum of the stressed values of each asset, multiplied by its weight in the portfolio. In our case, the stressed portfolio value would be-")
+        st.markdown("<b>Stressed Portfolio Value = (0.6 * 80% * \$10,000) + (0.4 * 80% * \$15,000) = \$8,400 + \$9,600 = \$18,000</b>", unsafe_allow_html=True)
+
+        st.markdown("<u><b>Calculate the portfolio loss:</b></u>", unsafe_allow_html=True)
+        st.markdown("The portfolio loss is the difference between the original portfolio value and the stressed portfolio value. In our case, the portfolio loss would be-")
+        st.markdown("<b>Portfolio Loss = \$25,000 - \$18,000 = \$7,000</b>", unsafe_allow_html=True)
+
+        st.markdown("<u><b>Calculate the percentage portfolio loss:</b></u>", unsafe_allow_html=True)
+        st.markdown("The percentage portfolio loss is simply the portfolio loss divided by the original portfolio value, multiplied by 100. In our case, the percentage portfolio loss would be-")
+        st.markdown("<b>Percentage Portfolio Loss = (\$7,000 / \$25,000) * 100 = 28%</b>", unsafe_allow_html=True)
+
+        st.markdown(" ")
+        st.markdown("By performing stress testing, we can see that under the scenario of an economic recession causing a 20% drop in the value of both assets, the portfolio would experience a loss of 28%. This information can help the bank to make more informed decisions about their portfolio management and risk mitigation strategies.")
 #         input_data=pd.DataFrame(input_data,columns=cols)  ## Converting input into a dataframe with respective columns
 #
 #         res=pipe.predict(input_data)[0]  ## Predicting the class
