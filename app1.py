@@ -34,7 +34,7 @@ if nav == "Credit Risk":
     income = st.number_input(inputIncome_label)
 #    st.write(income)
     
-    st.markdown("Select the appropriate house ownership type: ")
+    st.markdown("<b>Select the appropriate house ownership type: </b>", unsafe_allow_html=True)
     st.markdown("Mortgage --> 0")
     st.markdown("Other    --> 1")
     st.markdown("Own      --> 2")
@@ -48,7 +48,7 @@ if nav == "Credit Risk":
 #     bold_inputLength_label = f"**{inputLength_label}**"
     emp = st.number_input(inputLength_label)
     
-    st.markdown("Select the appropriate loan intent type: ")
+    st.markdown("<b>Select the appropriate loan intent type: </b>", unsafe_allow_html=True)
     st.markdown("Debt consolidation --> 0")
     st.markdown("Education          --> 1")
     st.markdown("Home improvement   --> 2")
@@ -60,7 +60,7 @@ if nav == "Credit Risk":
 #     bold_inputIntent_label = f"**{inputIntent_label}**"
     intent = st.selectbox(inputIntent_label, [0,1,2,3,4,5])
     
-    st.markdown("Select the appropriate loan grade type: ")
+    st.markdown("<b>Select the appropriate loan grade type: </b>", unsafe_allow_html=True)
     st.markdown("A --> 0")
     st.markdown("B --> 1")
     st.markdown("C --> 2")
@@ -81,7 +81,7 @@ if nav == "Credit Risk":
 #     bold_inputInterest_label = f"**{inputInterest_label}**"
     interest = st.number_input(inputInterest_label)
     
-    st.markdown("Select the appropriate loan status type: ")
+    st.markdown("<b>Select the appropriate loan status type: </b>", unsafe_allow_html=True)
     st.markdown("Repaid --> 0")
     st.markdown("Pending --> 1")
     
@@ -93,7 +93,7 @@ if nav == "Credit Risk":
 #     bold_inputPerInc_label = f"**{inputPerInc_label}**"
     per_inc = st.number_input(inputPerInc_label)
     
-    st.markdown("Select the appropriate type: ")
+    st.markdown("<b>Select the appropriate type: </b>", unsafe_allow_html=True)
     st.markdown("No --> 0")
     st.markdown("Yes --> 1")
     
