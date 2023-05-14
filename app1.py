@@ -9,7 +9,7 @@ import joblib
 #with open('/Users/pritika/Desktop/TrEx/model.pkl', 'rb') as file:
 #    model = pickle.load(file)
 
-nav = st.sidebar.selectbox("Select the one you wish to predict!", ["Home", "Credit Risk", "Market Risk"])
+nav = st.sidebar.selectbox("Select the one you wish to predict!", ["Home", "Credit Risk", "Market Risk", "Stress Testing"])
 
 if nav == "Home":
     st.title("Risk Management")
