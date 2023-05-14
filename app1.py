@@ -156,13 +156,20 @@ if nav =="Market Risk":
 #         input_data=[[Zscore, Pval]]
         
          pipe=joblib.load("std_dev.pkl")  ## Loading the pipeline
-         st.markdown("Standard Deviation:")
+         st.markdown("<u><b>Standard Deviation</b></u>", unsafe_allow_html=True)
          pipeRound = round(pipe, 3)
          st.write(pipeRound)
          
          var = Zscore * Pval * pipeRound
-         st.markdown("VAR:")
-         st.write(var)
+         varRound = round(var, 3)
+         st.markdown("<u><b>VAR:</b></u>", unsafe_allow_html=True)
+#         st.markdown("VAR:")
+         st.write(varRound)
+         
+         if Lim > varRound:
+            st.markdown("NOT UNDER RISK")
+         if Lim < varRound:
+            st.markdown("<b>IT IS UNDER RISK!!</b>")
 #         input_data=pd.DataFrame(input_data,columns=cols)  ## Converting input into a dataframe with respective columns
 #
 #         res=pipe.predict(input_data)[0]  ## Predicting the class
