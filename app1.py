@@ -175,7 +175,7 @@ if nav =="Market Risk":
          if Lim < varRound:
             st.markdown("<h1 style='font-size: 32px;'>IT IS UNDER RISK!!</h1>", unsafe_allow_html=True)
             
-    if nav=="Stress Testing":
+if nav=="Stress Testing":
         st.title("Stress Testing")
         st.markdown("Stress testing is a risk management process that involves evaluating the performance of a financial system, organization, or portfolio under different adverse scenarios.")
         st.markdown("Banks can conduct stress tests to determine how their portfolio would perform under different market scenarios. This can help to identify potential areas of weakness and allow banks to take proactive measures to mitigate risk.")
