@@ -155,7 +155,7 @@ if nav =="Market Risk":
 #
 #         input_data=[[Zscore, Pval]]
         
-         pipe=joblib.load("/Users/pritika/Desktop/TrEx/std_dev.pkl")  ## Loading the pipeline
+         pipe=joblib.load("std_dev.pkl")  ## Loading the pipeline
          st.markdown("Standard Deviation:")
          pipeRound = round(pipe, 3)
          st.write(pipeRound)
