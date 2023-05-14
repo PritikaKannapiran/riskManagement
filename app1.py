@@ -149,7 +149,7 @@ if nav =="Market Risk":
 #    bold_inputLim_label = f"**{inputPval_label}**"
     Lim = st.number_input(inputLim_label)
     
-    if st.button("Predict the risk",key = 9)==1:
+    if st.button("Submit",key = 9)==1:
          ## Order of passing the data into the pipeline:
 #         cols=['ZScore', 'portfolio value']  ## List of columns of the original dataframe
 #
