@@ -14,7 +14,7 @@ nav = st.sidebar.selectbox("Select the one you wish to predict!", ["Home", "Cred
 if nav == "Home":
     st.title("Risk Management")
     st.markdown("**Open innovation for managing the risk profile**")
-    st.image('/Users/pritika/Desktop/TrEx/riskManage.jpeg')
+    st.image('riskManage.jpeg')
     
     st.markdown("You’ve found yourself in the right place if you’re looking to find if it’s \nsafe for the bank to issue a loan or if it’s risky")
     st.markdown("Head over to the navigation bar on the left of the screen to check for credit \nand market risks")
