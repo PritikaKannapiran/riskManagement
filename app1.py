@@ -151,12 +151,18 @@ if nav =="Market Risk":
     
     if st.button("Predict the risk",key = 9)==1:
          ## Order of passing the data into the pipeline:
-         cols=['ZScore', 'portfolio value']  ## List of columns of the original dataframe
-                
-         input_data=[[Zscore, Pval]]
-        
-#         pipe=joblib.load("Newmodel.pkl")  ## Loading the pipeline
+#         cols=['ZScore', 'portfolio value']  ## List of columns of the original dataframe
 #
+#         input_data=[[Zscore, Pval]]
+        
+         pipe=joblib.load("/Users/pritika/Desktop/TrEx/std_dev.pkl")  ## Loading the pipeline
+         st.markdown("Standard Deviation:")
+         pipeRound = round(pipe, 3)
+         st.write(pipeRound)
+         
+         var = Zscore * Pval * pipeRound
+         st.markdown("VAR:")
+         st.write(var)
 #         input_data=pd.DataFrame(input_data,columns=cols)  ## Converting input into a dataframe with respective columns
 #
 #         res=pipe.predict(input_data)[0]  ## Predicting the class
