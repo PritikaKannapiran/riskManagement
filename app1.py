@@ -171,9 +171,9 @@ if nav =="Market Risk":
          st.write(varRound)
          
          if Lim > varRound:
-            st.markdown("NOT UNDER RISK")
+            st.markdown("<h1 style='font-size: 32px;'>NOT UNDER RISK!</h1>", unsafe_allow_html=True)
          if Lim < varRound:
-            st.markdown("<b>IT IS UNDER RISK!!</b>")
+            st.markdown("<h1 style='font-size: 32px;'>IT IS UNDER RISK!!</h1>", unsafe_allow_html=True)
 #         input_data=pd.DataFrame(input_data,columns=cols)  ## Converting input into a dataframe with respective columns
 #
 #         res=pipe.predict(input_data)[0]  ## Predicting the class
